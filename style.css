@@ -1,8 +1,17 @@
 body {
   margin: 0;
-  padding: 0;
-  background-color: rgb(174, 232, 255);
-  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  padding-top: 50px;
+  padding-left: 70px;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    109.6deg,
+    rgb(44, 83, 131) 18.9%,
+    rgb(95, 175, 201) 91.1%
+  );
+  text-align: left;
 }
 
 h1 {
@@ -16,15 +25,15 @@ h3 {
 }
 
 table {
-  margin-left: auto;
   margin-right: auto;
   margin-top: 50px;
+  border: 1px solid;
 }
 
-tr:nth-child(even) {
-  background-color: rgb(243, 241, 241);
+a {
+  color: white;
 }
 
 tr:nth-child(odd) {
-  background-color: rgb(223, 221, 221);
+  background-color: rgb(243, 241, 241);
 }
