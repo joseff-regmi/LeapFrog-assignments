@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(174, 232, 255);
+  text-align: center;
+}
+
+h1 {
+  font-family: sans-serif;
+  font-size: 30px;
+}
+
+h3 {
+  font-family: sans-serif;
+  font-size: 18px;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+
+tr:nth-child(even) {
+  background-color: rgb(243, 241, 241);
+}
+
+tr:nth-child(odd) {
+  background-color: rgb(223, 221, 221);
+}
