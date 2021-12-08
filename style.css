@@ -32,6 +32,10 @@ table {
 
 a {
   color: white;
+  text-decoration: none;
+}
+a:hover {
+  cursor: pointer;
 }
 
 tr:nth-child(odd) {
