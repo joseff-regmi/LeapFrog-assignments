@@ -32,12 +32,17 @@ table {
   border: 1px solid;
 }
 
+table th {
+  padding: 5px;
+}
+
 a {
   color: white;
   text-decoration: none;
 }
 a:hover {
   cursor: pointer;
+  color: yellow;
 }
 
 tr:nth-child(odd) {
