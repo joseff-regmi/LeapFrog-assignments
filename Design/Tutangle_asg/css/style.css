@@ -329,6 +329,8 @@ a {
   height: 80px;
   width: 400px;
   font-size: 12px;
+  padding-top: 3px;
+  margin-left: 10px;
 }
 
 .info_container > p {
@@ -346,11 +348,6 @@ a {
 
 .float_right {
   float: right;
-}
-
-.info_container {
-  padding-top: 3px;
-  padding-bottom: 0px;
 }
 
 .info_container:first-child {
@@ -375,6 +372,10 @@ a {
   text-align: left;
   margin-top: 13px;
   margin-bottom: 5px;
+}
+
+.peoples a {
+  font-weight: bold;
 }
 
 .footer {
