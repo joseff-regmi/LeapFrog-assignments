@@ -1,0 +1,417 @@
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav_top {
+  background-color: #7dd9e8;
+  text-align: center;
+}
+
+.inner_nav_top {
+  display: inline-block;
+  width: 935px;
+}
+
+.inner_nav_down {
+  margin: auto;
+  width: 935px;
+}
+
+.logo_search,
+.nav_name {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.search {
+  margin-top: 18px;
+  margin-left: 20px;
+}
+
+.nav_name {
+  text-align: right;
+}
+
+.nav_name a {
+  color: black;
+}
+
+.nav_name_navigations li {
+  display: inline;
+  font-size: 16px;
+}
+
+#search_btn_id {
+  color: whitesmoke;
+  font-size: 12px;
+  width: 68px;
+  height: 31px;
+  padding-bottom: 5px;
+  border: none;
+  cursor: pointer;
+  background: url(/images/search_btn.png) no-repeat;
+  background-size: contain;
+}
+
+#search_input_id {
+  background: url(/images/search_bg.png) no-repeat;
+  background-size: cover;
+  border: none;
+  font-size: 12px;
+  width: 255px;
+  padding: 5px;
+  border: none;
+}
+
+#magnify_id {
+  border: none;
+  background: url(/images/magnify.png) no-repeat;
+  background-size: contain;
+  width: 27px;
+  height: 27px;
+  margin-left: -4px;
+  margin-bottom: -10px;
+}
+
+#exit_img_id {
+  float: right;
+  position: absolute;
+  margin-left: 238px;
+  margin-top: 8px;
+}
+.nav_down {
+  background-color: #f5f5f5;
+  font-size: 16px;
+  width: 100%;
+  height: 41px;
+  display: inline-block;
+  text-align: center;
+}
+
+.nav_down_right {
+  padding-top: 4px;
+}
+
+.nav_down_right img {
+  margin-right: 10px;
+}
+
+.nav_down_right_list {
+  margin-top: 10px;
+}
+
+.nav_down_right_list li {
+  display: inline;
+  font-size: 14px;
+}
+
+.nav_down_right_list a {
+  color: #474747;
+  font-weight: bold;
+}
+
+.topic_box_container {
+  font-weight: bold;
+  font-size: 12px;
+  margin-right: 40px;
+  margin-top: 10px;
+}
+
+.friend_request_container {
+  font-weight: bold;
+  color: grey;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.nav_name label {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.left_top_menus {
+  display: block;
+  margin: 0px;
+}
+
+.main_container {
+  margin-top: 35px;
+  text-align: center;
+}
+
+.inner_main {
+  margin: auto;
+  width: 935px;
+  height: 615px;
+}
+
+.left_box {
+  background-color: #f5f5f5;
+  width: 195px;
+  height: 610px;
+}
+
+.recent_searches {
+  background-color: #2fc1da;
+  padding: 10px;
+  text-align: left;
+}
+
+.recent_searches a {
+  color: white;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.left_top_results_list {
+  padding: 0px;
+  margin: 0px;
+  font-size: 14px;
+  text-align: left;
+}
+
+.left_top_results_list li {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: left;
+}
+
+.left_top_results_list a {
+  float: right;
+}
+
+.left_top_results_list li:hover {
+  background-color: white;
+}
+
+.left_down_results_list {
+  padding: 0px;
+  margin: 0px;
+  font-size: 14px;
+  text-align: left;
+}
+
+.left_down_results_list li {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.left_down_results_list a {
+  float: right;
+}
+
+.left_down_results_list li:hover {
+  background-color: white;
+}
+
+.right_box {
+  background-color: #f5f5f5;
+  text-align: left;
+  margin-left: 25px;
+  width: 175px;
+  height: 610px;
+}
+
+.video_tutorials_list {
+  font-size: 14px;
+}
+
+.video_tutorials_list li {
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.video_tutorials_list a {
+  color: black;
+}
+
+.video_tutorials_list li:hover {
+  background-color: white;
+}
+
+.middle_box {
+  width: 515px;
+  height: 610px;
+}
+
+.middle_box_label {
+  margin-bottom: 10px;
+  text-align: left;
+  font-weight: bold;
+  font-size: 26px;
+}
+
+.middle_box_heading {
+  height: 70px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.middle_box_left {
+  float: left;
+  width: 256px;
+  height: 70px;
+  background: url(/images/all_entries_bg.png);
+  background-size: cover;
+}
+
+.middle_box_right {
+  float: right;
+  width: 256px;
+  height: 70px;
+  background: url(/images/subscribed_bg.png);
+  background-size: cover;
+}
+.middle_box_left_label {
+  margin-top: 10px;
+}
+
+.middle_box_right_label {
+  margin-top: 10px;
+}
+
+.middle_box_left_btn {
+  margin-top: 20px;
+}
+
+.all_members,
+.friends,
+.new_entries,
+.new_comments {
+  margin-left: 17px;
+  margin-right: 10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  width: 101px;
+  background: url(/images/grey_btn.png) no-repeat;
+  background-size: contain;
+}
+
+.all_members:hover,
+.friends:hover,
+.new_entries:hover,
+.new_comments:hover {
+  background: url(/images/blue_btn.png) no-repeat;
+  background-size: contain;
+}
+
+.middle_box_right_btn {
+  margin-top: 20px;
+}
+
+.main_hr {
+  border: 0px;
+  height: 2px;
+  color: #2fc1da;
+  background-color: #3ccde4;
+  margin-top: 0px;
+}
+
+.first_person {
+  margin-top: 20px;
+}
+.image_container {
+  float: left;
+  height: 80px;
+  width: 70px;
+}
+
+.info_container {
+  height: 80px;
+  width: 400px;
+  font-size: 12px;
+}
+
+.info_container > p {
+  margin-top: 1px;
+}
+
+.topic {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.float_left {
+  float: left;
+}
+
+.float_right {
+  float: right;
+}
+
+.info_container {
+  padding-top: 3px;
+  padding-bottom: 0px;
+}
+
+.info_container:first-child {
+  font-weight: bold;
+}
+
+.info_container a {
+  color: #4faec0;
+}
+
+.info_container label {
+  color: #719820;
+  font-weight: bold;
+}
+
+.topic_box_invite a {
+  color: #d73e1e;
+  font-weight: bold;
+}
+
+.peoples {
+  text-align: left;
+  margin-top: 13px;
+  margin-bottom: 5px;
+}
+
+.footer {
+  background-color: #727272;
+  margin-top: 20px;
+  color: white;
+  text-align: center;
+}
+
+.footer_nav_ul_list li {
+  list-style-type: disc;
+  font-size: 12px;
+  float: left;
+  margin: 10px;
+}
+
+.footer_nav_ul_list a {
+  margin-top: 15px;
+  color: white;
+}
+
+.copyright {
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.footer_nav_ul_list:first-child() {
+  list-style-type: none;
+}
+
+.inner_footer {
+  margin: auto;
+  width: 935px;
+}
+
+.sub_hr {
+  border: none;
+  height: 1px;
+  background-color: #d7d7d7;
+}
