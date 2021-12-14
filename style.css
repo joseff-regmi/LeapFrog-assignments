@@ -53,3 +53,11 @@ tr:nth-child(odd) {
 tr:nth-child(even) {
   color: white;
 }
+
+tr:nth-child(odd) a {
+  color: blue;
+}
+
+tr:nth-child(odd) a:hover {
+  color: green;
+}
