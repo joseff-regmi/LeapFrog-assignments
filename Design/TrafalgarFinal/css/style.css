@@ -1,0 +1,845 @@
+/* Mobile first  */
+/* Header section */
+
+#hamburger_id {
+  width: 48px;
+}
+
+#vector_img_top_id,
+#vector_group_testi_id,
+.vector_img,
+.navigations_list,
+footer > img {
+  display: none;
+}
+
+.header {
+  text-align: center;
+}
+
+.header_warper {
+  margin: auto;
+  margin: 5%;
+}
+
+/* Hero section */
+.hero_section {
+  margin: 5%;
+  text-align: center;
+}
+
+.image_primary {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+h1 {
+  margin-top: 8%;
+  font-size: 7vw;
+}
+
+.paragraph_primary {
+  margin-top: 4%;
+  font-size: 4vw;
+  color: #7d7987;
+}
+
+.btn_primary {
+  margin-top: 8%;
+  font-size: 4vw;
+  width: 40%;
+  padding-left: 4%;
+  padding-right: 4%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  border: none;
+  border-radius: 40px;
+  background-color: #458ff6;
+  color: #ffffff;
+}
+
+/* Service section */
+
+.service_section_top {
+  margin: 5%;
+  text-align: center;
+}
+
+.service_section {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  font-size: 6vw;
+}
+
+hr {
+  width: 56px;
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border: 1px solid black;
+  background-color: black;
+  border-radius: 0.5px;
+}
+
+.paragraph_secondary {
+  font-size: 4vw;
+  color: #7d7987;
+}
+
+.service_section_down {
+  padding: 5%;
+  background: url(../images/service_bg.svg),
+    url(../images/vector_group_service.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-size: contain, 200px 200px;
+  background-position: bottom left, right;
+}
+
+.services {
+  background-color: #ffffff;
+  text-align: center;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 15px 24px 0px;
+  padding: 5%;
+  margin-top: 8%;
+  border-radius: 20px;
+}
+
+h3 {
+  font-size: 5vw;
+}
+
+.paragraph_tertiary {
+  font-size: 4vw;
+  color: #7d7987;
+  margin-bottom: 5%;
+  padding: 5%;
+}
+
+.service_icons {
+  width: 15%;
+}
+
+.btn_container {
+  text-align: center;
+}
+
+.btn_secondary {
+  border: 2px solid #4992f6;
+  background-color: #ffffff;
+  color: #458ff6;
+  margin-top: 4%;
+  font-weight: bold;
+  font-size: 4vw;
+  width: 40%;
+  padding-left: 4%;
+  padding-right: 4%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  border-radius: 40px;
+  margin-bottom: 10%;
+}
+
+.btn_secondary:active {
+  background-color: #4992f6;
+  color: white;
+  box-shadow: #4991f64f 2px 2px 2px 2px;
+}
+
+/* Healthcare section */
+
+.healthcare_section {
+  margin: 5%;
+  text-align: center;
+}
+
+.download_section {
+  margin: 5%;
+  text-align: center;
+}
+
+.symbol {
+  width: 10%;
+}
+
+/* Testimonials section */
+
+.testimonials_section {
+  padding: 5%;
+  text-align: center;
+}
+
+.testimonials_container {
+  background-image: linear-gradient(to top right, #5a98f2, #67c3f3);
+  color: #ffffff;
+  border-radius: 20px;
+}
+
+.testimonials_container p {
+  color: white;
+}
+
+.testimonial_heading {
+  padding-top: 5%;
+}
+
+.white_hr {
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 1px;
+}
+
+.a_person {
+  width: 30%;
+  border: 0px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+blockquote {
+  padding: 5%;
+  font-size: 5.5vw;
+}
+
+.btn_container {
+  margin-top: 5%;
+}
+
+.left_arrow {
+  width: 5%;
+  margin-top: 1%;
+  margin-right: 5%;
+  padding-top: 1%;
+  border: 0px;
+  background-color: white;
+}
+.right_arrow {
+  width: 5%;
+  margin-top: 1%;
+  margin-left: 5%;
+  padding-top: 1%;
+  border: 0px;
+  background-color: white;
+}
+
+.left_arrow img,
+.right_arrow img {
+  width: 100%;
+}
+
+.inactive_arrow:hover {
+  filter: #458ff6;
+}
+
+.radio {
+  border: 0px;
+  background: white;
+  margin-left: 2%;
+  width: 2%;
+}
+
+.radio:hover,
+.radio:active {
+  background: url(../images/radio_active.svg) no-repeat;
+  background-size: contain;
+}
+
+.radio img {
+  width: 100%;
+  padding-bottom: 50%;
+}
+
+/* Article section */
+
+.article_section {
+  padding: 5%;
+  position: relative;
+  text-align: center;
+  background: url(../images/article_bg.svg) no-repeat;
+  background-size: cover;
+}
+
+.article {
+  border-radius: 20px;
+  width: 100%;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 15px 24px 0px;
+  padding-bottom: 5%;
+  margin-bottom: 5%;
+  background-color: white;
+}
+
+.article_image_container {
+  width: 100%;
+}
+
+.article_image_container img {
+  width: 100%;
+}
+
+h5 {
+  font-size: 5vw;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.article_anchor {
+  color: #4089ed;
+  font-size: 5vw;
+}
+
+.article_anchor:active {
+  font-weight: bold;
+}
+
+.article_anchor img {
+  width: 5%;
+}
+
+#herbal_medicine_img_id {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+/* Footer */
+
+footer {
+  background-image: linear-gradient(to top right, #5a98f2, #67c3f3);
+  color: white;
+  text-align: left;
+  padding: 5%;
+}
+
+h6 {
+  font-size: 4vw;
+}
+
+#footer_logo {
+  width: 41px;
+  height: 41px;
+  border-radius: 50%;
+  border: 0px;
+  background-color: white;
+  font-size: 26px;
+  font-weight: bold;
+  color: #5b9bf3;
+}
+
+#footer_logo_text {
+  font-size: 24px;
+  font-weight: bold;
+  display: inline;
+}
+
+#footer_p_id {
+  color: white;
+  padding: 0%;
+  margin-top: 5%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: lighter;
+}
+
+.footer_nav_list a,
+.footer_region a,
+.footer_help a {
+  color: white;
+}
+
+.footer_nav_list a:hover,
+.footer_region a:hover,
+.footer_help a:hover {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+li {
+  font-size: 4vw;
+}
+
+h6 {
+  font-size: 5vw;
+  margin-bottom: 2%;
+  margin-top: 7%;
+}
+
+small {
+  font-size: 4vw;
+  display: inline-block;
+}
+
+@media only screen and (min-width: 768px) {
+  .virtual_health_care {
+    width: 40%;
+    float: left;
+    text-align: left;
+  }
+
+  .vector_img {
+    display: none;
+  }
+
+  h1 {
+    margin-top: 10%;
+    font-size: 48px;
+  }
+
+  h2 {
+    font-size: 36px;
+    text-align: left;
+  }
+
+  h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+  hr {
+    margin-left: 0px;
+  }
+
+  .paragraph_primary {
+    font-size: 21px;
+  }
+
+  .paragraph_secondary {
+    font-size: 18px;
+  }
+  .paragraph_tertiary {
+    font-size: 16px;
+  }
+
+  .btn_primary {
+    font-size: 18px;
+    padding: 4%;
+    width: 50%;
+    border-radius: 40px;
+  }
+
+  .service_section_down {
+    display: block;
+  }
+
+  .services {
+    width: 45%;
+    text-align: left;
+    display: inline-block;
+    margin-top: 0px;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+
+  .services p {
+    padding-left: 0px;
+  }
+
+  /* .service_icons {
+    width: 48px;
+    height: 48px;
+  } */
+
+  .btn_secondary {
+    font-size: 18px;
+    padding: 2%;
+    width: 20%;
+    border-radius: 40px;
+    margin-left: 0px;
+  }
+
+  .header_warper {
+    margin-top: 3%;
+    padding: 0px;
+  }
+
+  .image_primary {
+    width: 45%;
+  }
+
+  .healthcare_topic {
+    width: 47%;
+    text-align: left;
+    margin-left: 30px;
+  }
+
+  .download_topic {
+    width: 45%;
+    text-align: left;
+  }
+
+  .download_topic h2 {
+    text-align: left;
+  }
+
+  .service_section_top hr {
+    margin: auto;
+  }
+
+  .service_section_top h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  hr {
+    text-align: left;
+  }
+
+  .service_section_top p {
+    margin-top: 20px;
+  }
+
+  .download_section {
+    text-align: left;
+  }
+
+  .healthcare_section {
+    text-align: left;
+  }
+
+  .healthcare_section button {
+    margin-left: 8%;
+  }
+
+  .white_hr {
+    margin: auto;
+    margin-top: 10px;
+  }
+
+  blockquote {
+    font-size: 19px;
+    width: 65%;
+  }
+
+  h4 {
+    font-size: 24px;
+  }
+
+  .testimonial_heading h2 {
+    text-align: center;
+  }
+
+  .image_and_info {
+    width: 35%;
+    float: left;
+  }
+
+  .testimonial_heading {
+    padding-top: 3%;
+  }
+
+  .article {
+    width: 30%;
+    float: left;
+    margin-left: 23px;
+    text-align: left;
+  }
+
+  .article_disease_info h5 {
+    font-size: 21px;
+    font-weight: bold;
+    padding: 10px;
+  }
+
+  .article_anchor {
+    font-weight: bolder;
+    font-size: 17px;
+    margin-left: 10px;
+  }
+
+  .right_section_warper {
+    width: 40%;
+    float: right;
+  }
+
+  .left_section_warper {
+    width: 50%;
+    float: left;
+  }
+
+  h6 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .footer_nav_list a {
+    font-size: 16px;
+    color: #ffffff;
+  }
+
+  a:hover {
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  #copyright_id {
+    font-size: 16px;
+    width: 100%;
+    float: left;
+  }
+
+  .btn_secondary:hover {
+    cursor: pointer;
+    background-color: #4089ed;
+    color: white;
+  }
+
+  .btn_primary:hover {
+    box-shadow: #4991f64f 2px 2px 2px 2px;
+    cursor: pointer;
+  }
+
+  .article_section hr {
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+
+  .article_section h2 {
+    text-align: center;
+  }
+
+  small {
+    font-size: 16px;
+    display: inline-block;
+    font-weight: lighter;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  #vector_img_top_id {
+    display: block;
+    position: absolute;
+    margin-left: -90px;
+  }
+
+  #hamburger_id {
+    display: none;
+  }
+
+  .navigations_list {
+    display: inline;
+  }
+
+  .navigations_list li {
+    display: inline;
+    font-size: 18px;
+    margin-right: 40px;
+  }
+
+  .navigations_list a {
+    color: #8f8a99;
+  }
+
+  .navigations_list a:hover {
+    color: #1f1f34;
+    font-weight: bold;
+  }
+
+  .navigations_container {
+    margin-top: 10px;
+  }
+
+  .header_warper {
+    margin-top: 0px;
+    margin-left: 0px;
+    padding-top: 40px;
+    padding-left: 125px;
+  }
+
+  .hero_section {
+    margin: 78px;
+  }
+
+  .virtual_health_care {
+    padding-top: 75px;
+    padding-left: 50px;
+  }
+
+  .image_primary {
+    width: 55%;
+  }
+
+  .service_section {
+    margin: 78px;
+  }
+
+  .service_section_top {
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-bottom: 0px;
+  }
+
+  .services {
+    width: 30%;
+  }
+
+  .healthcare_section button {
+    margin-left: 4%;
+  }
+
+  .healthcare_section {
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+
+  .healthcare_topic {
+    width: 40%;
+    text-align: left;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    margin-top: 100px;
+  }
+
+  .article_section {
+    background: url(../images/vector_group_service.svg),
+      url(../images/article_bg.svg);
+    background-repeat: no-repeat;
+    background-size: 200px 200px, contain;
+    background-position: 6% 15%, right;
+    padding: 10%;
+  }
+
+  .download_section {
+    padding-left: 10%;
+  }
+
+  .vector_img {
+    display: block;
+    text-align: right;
+    margin-right: -5px;
+  }
+
+  .vector_img img {
+    width: 100px;
+  }
+
+  #vector_group_testi_id {
+    display: block;
+    position: absolute;
+    width: 100px;
+    margin-left: 84%;
+    margin-top: -4%;
+  }
+
+  .testimonials_section {
+    position: relative;
+    background: url(../images/vector_group_testi.svg);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    padding: 10%;
+  }
+
+  .footer_trafalgar {
+    float: left;
+    width: 50%;
+  }
+
+  .footer_company {
+    float: right;
+    width: 30%;
+  }
+
+  .footer_region {
+    float: left;
+    width: 50%;
+  }
+
+  .footer_help {
+    float: right;
+    width: 50%;
+  }
+
+  .footer_nav_list li {
+    line-height: 20px;
+  }
+
+  .footer_nav_list a {
+    font-weight: lighter;
+  }
+
+  .footer_heading {
+    margin-top: 0px;
+  }
+
+  footer {
+    padding: 10%;
+    padding-bottom: 0px;
+  }
+
+  .btn_secondary {
+    padding: 1.2%;
+    width: 15%;
+    font-weight: normal;
+    margin-top: 0px;
+  }
+
+  .btn_container {
+    margin-top: 0px;
+  }
+
+  small {
+    float: left;
+  }
+
+  footer img {
+    display: block;
+    margin-top: 275px;
+    margin-left: -165px;
+  }
+
+  .service_section_down {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .download_topic {
+    float: left;
+    width: 40%;
+    margin-top: 100px;
+    margin-bottom: 20px;
+  }
+
+  blockquote {
+    width: 40%;
+    padding: 0px;
+    float: left;
+  }
+
+  .image_info_and_quote {
+    margin: 50px;
+  }
+
+  .info_container h4 {
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  .testimonials_container {
+    padding-bottom: 20px;
+  }
+
+  .image_and_info {
+    width: 50%;
+    float: left;
+    display: block;
+    margin: 20px;
+  }
+
+  .image_container {
+    width: 40%;
+    float: left;
+  }
+
+  .a_person {
+    width: 141px;
+    height: 141px;
+  }
+
+  .info_container {
+    width: 180px;
+    float: left;
+    margin-top: 40px;
+    margin-left: 10px;
+  }
+}

@@ -1,0 +1,14 @@
+.clearfix::before,
+.clearfix::after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.float_left {
+  float: left;
+}
+
+.float_right {
+  float: right;
+}
