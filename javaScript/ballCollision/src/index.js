@@ -1,7 +1,7 @@
 class Canves{
     constructor(){
         this.box = document.createElement('canvas');
-        this.ctx = this.box.getContext('2d');
+        this.contx = this.box.getContext('2d');
         document.body.appendChild(this.box);
         this.box.width = 1000;
         this.box.height = 600;
@@ -9,7 +9,7 @@ class Canves{
         this.ball();
 
         requestAnimationFrame(() => this.update());
-    }
+    };
 
     ball(){
         const BALLS = 30;
@@ -22,66 +22,61 @@ class Canves{
 
 
     update(){
-        this.ctx.clearRect(0, 0, this.box.width, this.box.height);
+        this.contx.clearRect(0, 0, this.box.width, this.box.height);
 
         for (let i = 0; i < this.balls.length; i++){
-            const currentBall = this.balls[i]
-            const remainingBall = this.balls.slice(i+1)
+            const currentBall = this.balls[i];
+            const remainingBall = this.balls.slice(i+1);
 
             for (let bal of remainingBall){
-                bal.ballCollide(currentBall)
-                
-            }
-        }
+                bal.ballCollide(currentBall);
+            };
+        };
         
         for(let ball of this.balls){
             ball.update();
-            ball.edgeCollide(this.box.width, this.box.height)
-            this.ctx.fillStyle = `rgb(200, 240, 100)`
-            this.ctx.beginPath();
-            this.ctx.arc(ball.position.x, ball.position.y, ball.radius, 0, 2*Math.PI)
-            this.ctx.fill()
-            this.ctx.stroke()
+            ball.edgeCollide(this.box.width, this.box.height);
+            this.contx.fillStyle = `rgb(200, 240, 100)`;
+            this.contx.beginPath();
+            this.contx.arc(ball.position.x, ball.position.y, ball.radius, 0, 2*Math.PI);
+            this.contx.fill();
+            this.contx.stroke();
      
-        }
+        };
         requestAnimationFrame(() => this.update());
-    }
-}
+    };
+};
 
 class Ball{
     constructor(x, y){
-        this.position = new Dimension(x, y)
+        this.position = new Dimension(x, y);
         this.speed = Dimension.ra(-1, 1, -1, 1);
-        this.radius = randomGenerator(5, 20)
-        this.accer = new Dimension(0, 0)
-    }
+        this.radius = randomGenerator(5, 20);
+        this.accer = new Dimension(0, 0);
+    };
 
     update() {
         this.position = Dimension.add(this.position, this.speed);
         this.speed = Dimension.add(this.speed, this.accer);
-        this.accer = Dimension.multiply(this.accer, 0)
-      }
+        this.accer = Dimension.multiply(this.accer, 0);
+      };
 
     edgeCollide(width, height){
         if (this.position.x <= 0 + this.radius || this.position.x >= width-this.radius){
             this.speed.x = - this.speed.x;
         }else if(this.position.y <= 0 + this.radius || this.position.y >= height-this.radius){
             this.speed.y = - this.speed.y;
-        }
-    }
+        };
+    };
     ballCollide(ball){
-        // console.log(this.position.x)
-        // console.log(ball.position.x)
-        // console.log(this.position.y)
-        // console.log(ball.position.y)
-        const d = Dimension.subtraction(this.position, ball.position)
-        const distance = d.magnitude()
+        const d = Dimension.subtraction(this.position, ball.position);
+        const distance = d.magnitude();
 
         if (distance < this.radius + ball.radius){
         //normal vector of two points n = (x2-x1, y2-y1) n/distance
 
-            const normal = Dimension.divide(d, d.magnitude()) 
-            const tang = normal.tangent()
+            const normal = Dimension.divide(d, d.magnitude()) ;
+            const tang = normal.tangent();
 
             const corr = Dimension.multiply(normal, this.radius + ball.radius);
             const cPosition = Dimension.add(ball.position, corr);
@@ -139,69 +134,69 @@ class Ball{
             // this.speed = finalOutputFirst
             // ball.speed = finalOutputFSecond
         
-                        }
+                        };
 
-    }
+    };
     
 
-}
+};
 
 class Dimension{
     constructor(x, y){
         this.x = x;
         this.y = y;
-    }
+    };
 
     static add(coord1, coord2){
-        return new Dimension(coord1.x + coord2.x, coord1.y + coord2.y)
-    }
+        return new Dimension(coord1.x + coord2.x, coord1.y + coord2.y);
+    };
 
     static multiply(coord1, constent){
-        return new Dimension(coord1.x * constent, coord1.y*constent)
-    }
+        return new Dimension(coord1.x * constent, coord1.y*constent);
+    };
 
     static divide(coord1, constent){
-        return new Dimension(coord1.x/constent, coord1.y/constent)
-    }
+        return new Dimension(coord1.x/constent, coord1.y/constent);
+    };
 
     // magnitude gives by underroot x-square + y-square
 
     magnitude(){
-        return Math.sqrt(Math.pow(this.x, 2) + Math.pow(this.y, 2))
-    }
+        return Math.sqrt(Math.pow(this.x, 2) + Math.pow(this.y, 2));
+    };
 
     // tangent of (x, y) vector is (-y, x)
     // elastic collision never loose it's kinatic energy
     tangent(){
-        return new Dimension(-this.y, this.x)
-    }
+        return new Dimension(-this.y, this.x);
+    };
 
     dotProduct(coord){
         // console.log(coord.y)
         // console.log(this.x)
-        return coord.x*this.x + coord.y*this.y
+        return coord.x*this.x + coord.y*this.y;
 
-    }
+    };
 
     static subtraction(coord1, coord2){
-        return new Dimension(coord1.x - coord2.x, coord1.y - coord2.y)
-    }
+        return new Dimension(coord1.x - coord2.x, coord1.y - coord2.y);
+    };
 
     static ra(minX, maxX, minY, maxY) {
         return new Dimension(
           randomGenerator(minX, maxX),
           randomGenerator(minY, maxY)
-        );}
-}
+        );};
+};
 
 
 function randomGenerator(min, max){
     let diff = max - min;
-    let rand = Math.random()
+    let rand = Math.random();
     rand = Math.floor( rand * diff);
     rand = rand + min;
 
     return rand;
-    }
+    };
 
 new Canves();
