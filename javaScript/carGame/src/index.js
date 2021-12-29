@@ -7,8 +7,7 @@ class Game{
         this.setupRoad();
         this.setupScoreBoard();
         this.setupMenu();
-        
-    }
+    };
 
     setupRoad(){
         this.road = document.createElement('div');
@@ -16,7 +15,7 @@ class Game{
         roadCss(this.road);
         this.gameSection.appendChild(this.road);
 
-    }
+    };
 
     setupScoreBoard(){
         this.board = document.createElement('div');
@@ -41,7 +40,7 @@ class Game{
         yourScoreCss(this.heigestScore);
         this.heigestScore.innerHTML = 'heigest score: 0';
         this.board.appendChild(this.heigestScore);
-    }
+    };
 
     setupDivider(){
         for (let i = 0; i < 5; i++){
@@ -79,7 +78,7 @@ class Game{
         this.menu.appendChild(this.playBtn);
 
         this.playBtn.addEventListener('click', (e)=>{this.gamePlay(), this.obstacle()});
-    }
+    };
 
 
     gamePlay(){
@@ -109,9 +108,9 @@ class Game{
                 this.mainCar.style.transform = 'rotate(10deg)';
                 this.currentPosition += 5;
                 }
-        })
+        });
 
-    }
+    };
 
     obstacle(){
         for (let i = 0; i < 3; i++){
@@ -128,9 +127,9 @@ class Game{
              mainCarImgCss(this.otherCarImg);
              this.otherCarImg.src = 'images/otherCar.png';
              this.otherCar.appendChild(this.otherCarImg);
-        }
-    }
-}
+        };
+    };
+};
 
 
 function randomGenerator(min, max){
@@ -140,7 +139,7 @@ function randomGenerator(min, max){
     rand = rand + min;
 
     return rand;
-    }
+    };
 
 
-new Game()
+new Game();
