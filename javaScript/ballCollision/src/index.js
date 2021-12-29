@@ -134,7 +134,7 @@ class Ball{
             // this.speed = finalOutputFirst
             // ball.speed = finalOutputFSecond
         
-                        };
+            };
 
     };
     
